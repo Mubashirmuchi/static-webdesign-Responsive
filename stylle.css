@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-content {
+    display: flex;
+    width: 3 00%; /* 3 slides, 100% each */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide h1 {
+    font-size: 24px;
+}
+
+.slide p {
+    font-size: 16px;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Style labels as radio buttons */
+label {
+    display: inline-block;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Style checked labels */
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+}
+
+.slider-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button#slideButton {
+    margin-top: 20px;
+}
